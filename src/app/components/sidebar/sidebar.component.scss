@@ -1,0 +1,32 @@
+.sidebar{
+  background-color: #fff;
+  padding-left: 2rem;
+  &__item{
+    padding: 1rem 0.8rem;
+    display: inline-block;
+  }
+
+  &__item:hover>a{
+    color: #3dafda;
+    text-decoration: none;
+  }
+
+  &__item a{
+    padding: 0.5rem 0.2rem;
+    font-family: Roboto, sans-serif;
+    color: #6e7488;
+  }
+
+  @media screen and (min-width:600px) {
+    padding-left: 4.45rem;
+    &__item{
+      padding: 1rem 0.8rem;
+      display: inline-block;
+    }
+    &__item a{
+      padding: 1rem 0.4rem;
+      font-family: Roboto, sans-serif;
+      color: #6e7488;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+nav{
+  padding: 0.4rem 1rem;
+  background-color: #3bafda;
+  a{
+    color: aliceblue !important;
+  }
+  // .navbar-brand{
+  //   margin-left: 3.3125rem;
+  // }
+  .navbar-nav .nav-item .dropdown-menu{
+    background-color: #3bafda;
+    left: -14px;
+    top: 48px;
+    .dropdown-item{
+      &:hover{
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  .navbar-nav .nav-item a{
+    padding: 0.8rem 1.4rem;
+
+    &:hover{
+      text-decoration: solid;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: 0.1s;
+      color: aliceblue;
+      cursor: pointer;
+    }
+  }
+  @media screen and (min-width:600px){
+    padding: 0 5.8rem;
+  }
+}

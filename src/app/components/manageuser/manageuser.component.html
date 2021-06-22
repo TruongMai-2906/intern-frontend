@@ -1,0 +1,23 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Email</th>
+      <th scope="col">Account</th>
+      <!-- <th scope="col">Phone Number</th> -->
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of userList; let i = index" [attr.data-index]="i">
+      <th scope="row">{{i}}</th>
+      <td>{{item.email}}</td>
+      <td>{{item.account}}</td>
+      <!-- <td>{{item.phoneNumber}}</td> -->
+      <td>
+        <!-- <a class="action-button"><i class="far fa-edit"></i></a>&nbsp;&nbsp; -->&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="action-button" (click)="deleteUser(item.email)"><i class="far fa-trash-alt"></i></a>
+      </td>
+    </tr>
+  </tbody>
+</table>

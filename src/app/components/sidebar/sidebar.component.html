@@ -1,0 +1,9 @@
+<div class="sidebar">
+  <div class="sidebar__item"><a routerLink="/"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></div>
+  <div class="sidebar__item"><a routerLink="ITNews"><i class="far fa-newspaper"></i>&nbsp;&nbsp;IT News</a></div>
+  <div class="sidebar__item"><a  routerLink="NewsForm"><i class="fas fa-book-open"></i>&nbsp;&nbsp;Add News</a></div>
+  <a *ngIf="currentUser.getRole === 1">
+    <div class="sidebar__item"><a routerLink="EditNews"><i class="fas fa-home"></i>&nbsp;&nbsp;Edit News</a></div>
+    <div class="sidebar__item"><a routerLink="ManageUser"><i class="far fa-newspaper"></i>&nbsp;&nbsp;Manage User</a></div>
+  </a>
+</div>

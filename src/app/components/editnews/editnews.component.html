@@ -1,0 +1,20 @@
+<div>
+  <div class="box--spacing">
+    <div class="box__title"><p style="margin: 0;">Edit IT News</p></div>
+    <div class="row">
+      <div class="card col-xl-3 col-md-6 card--spacing" *ngFor="let item of newsList">
+        <div class="card__item">
+          <img class="card-img-top" src="../../../assets/image/newsthumnail1.jpg" alt="Card image cap">
+          <div class="card-body">
+          <h5 class="card-title">{{ item.title }}</h5>
+          <p class="card__author card__author--grey">Author: {{ item.slug }}</p>
+          <p class="card-text">{{ item.description }}</p>
+          <a [routerLink]="['EditNewsItem']" [queryParams]="{ 'id':item.id }"  class="btn btn-primary" >Edit</a>&nbsp;&nbsp;
+          <a class="btn btn-primary delete-button" (click)="deleteNews(item.id)">Delete</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
